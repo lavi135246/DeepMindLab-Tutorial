@@ -16,12 +16,12 @@ cc_library(
     name = "python",
     hdrs = glob([
         "include/python3.6/*.h",
-        "lib/python3/dist-packages/numpy/core/include/numpy/*.h", # in a normal desktop ubuntu 16.04
+        "lib/python3/dist-packages/numpy/core/include/numpy/*.h", # in a normal desktop ubuntu 18.04
         #"local/lib/python3.5/dist-packages/numpy/core/include/numpy/*.h", # in some other ubuntu
     ]),
     includes = [
         "include/python3.6",
-        "lib/python3/dist-packages/numpy/core/include", # in a normal desktop ubuntu 16.04
+        "lib/python3/dist-packages/numpy/core/include", # in a normal desktop ubuntu 18.04
         #"local/lib/python3.5/dist-packages/numpy/core/include", # in some other ubuntu
     ],
     visibility = ["//visibility:public"],
